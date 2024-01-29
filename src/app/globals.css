@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  @apply pointer-events-none h-full w-full object-cover;
+}
+* {
+  @apply text-primary;
+}
+
+h3 {
+  @apply font-Rubik;
+}
+h2 {
+  @apply font-Rubik text-xl font-semibold md:text-3xl;
+}
