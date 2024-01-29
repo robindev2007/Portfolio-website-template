@@ -31,10 +31,10 @@ const Button: FC<ButtonProps> = ({
     }
   };
 
-  const customClass = clsx(
+  const customClass = cn(
     "flex h-9 w-fit items-center no-warp px-5",
     // className,
-    variant ? getVariant(variant) : getVariant("Default"),
+    variant ? getVariant(variant) : getVariant("Default")
   );
 
   const ref = useRef(null);
@@ -50,9 +50,8 @@ const Button: FC<ButtonProps> = ({
         !variant || variant === "Default"
           ? "flex items-center justify-center text-nowrap rounded-full"
           : "bg-transparent p-0",
-        className,
-      )}
-    >
+        className
+      )}>
       <button className={customClass} {...props}>
         {children}
       </button>
